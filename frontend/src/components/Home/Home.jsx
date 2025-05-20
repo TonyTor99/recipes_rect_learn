@@ -9,7 +9,6 @@ function Home() {
         axios.get('http://localhost:8000/api/categories/')
             .then(res => {
                 setCategories(res.data)
-                console.log(res.data);
             })
             .catch(err => console.error(err));
     }, []);
